@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                                http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.whackon.witmed</groupId>
   <artifactId>witmed-parent</artifactId>
   <version>1.0.0</version>
-
-  <!--设置项目的打包方式为 pom-->
+  <!-- 设置项目的打包方式为 pom -->
   <packaging>pom</packaging>
 
-  <!--配置使用 Spring Boot Starter Parent 作为项目父级依赖[BEGIN]-->
+  <!-- 配置使用 Spring Boot Starter Parent 作为项目父级依赖 [BEGIN] -->
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.6.2</version>
   </parent>
-  <!--配置使用 Spring Boot Starter Parent 作为项目父级依赖[END]-->
+  <!-- 配置使用 Spring Boot Starter Parent 作为项目父级依赖 [END] -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <hutool-all.version>5.7.18</hutool-all.version>
-    <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
     <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
     <mybatis-plus-boot-starter.version>3.4.3.4</mybatis-plus-boot-starter.version>
     <druid-spring-boot-starter.version>1.2.8</druid-spring-boot-starter.version>
@@ -33,20 +32,19 @@
   </properties>
 
   <dependencies>
-    <!--配置 Spring Boot Starter Web 依赖[BEGIN]-->
+    <!-- 配置 Spring Boot Starter Web 依赖 [BEGIN] -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!--配置 Spring Boot Starter Web 依赖[END]-->
+    <!-- 配置 Spring Boot Starter Web 依赖 [END] -->
 
-    <!--配置 Spring Boot Devtools 依赖[BEGIN]-->
-    <!--作用是不关闭的情况热重启-->
+    <!-- 配置 Spring Boot Devtools 依赖 [BEGIN] -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
     </dependency>
-    <!--配置 Spring Boot Devtools 依赖[BEGIN]-->
+    <!-- 配置 Spring Boot Devtools 依赖 [END] -->
 
     <dependency>
       <groupId>junit</groupId>
@@ -57,7 +55,7 @@
 
   <dependencyManagement>
     <dependencies>
-      <!--配置 Spring Cloud Dependencies 依赖[BEGIN]-->
+      <!-- 配置 Spring Cloud Dependencies 依赖 [BEGIN] -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
@@ -65,15 +63,14 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <!--配置 Spring Cloud Dependencies 依赖[END]-->
+      <!-- 配置 Spring Cloud Dependencies 依赖 [END] -->
     </dependencies>
   </dependencyManagement>
 
   <build>
     <pluginManagement>
       <plugins>
-        <!--打包插件-->
-        <!--配置 Spring Boot Maven Plugin 依赖[BEGIN]-->
+        <!-- 配置 Spring Boot Maven Plugin 依赖 [BEGIN] -->
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
@@ -85,7 +82,7 @@
             </execution>
           </executions>
         </plugin>
-        <!--配置 Spring Boot Maven Plugin 依赖[END]-->
+        <!-- 配置 Spring Boot Maven Plugin 依赖 [END] -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>

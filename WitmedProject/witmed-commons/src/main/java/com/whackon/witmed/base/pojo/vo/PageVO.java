@@ -20,25 +20,25 @@ import java.util.List;
  */
 public class PageVO<E extends BaseVO> implements Serializable {
 	private static final long serialVersionUID = -3458922961994208370L;
-	private Integer pageNum;            //当前页码
-	private Integer pageSize;           //每页显示数量
-	private List<E> list;               //分页列表
-	private Long totalCount;            //总条数
-	private Integer totalPage;          // 总页数
+	private Integer pageNum;                        // 当前页码
+	private Integer pageSize;                       // 每页显示数量
+	private List<E> list;                           // 分页列表
+	private Long totalCount;                        // 总条数
+	private Integer totalPage;                      // 总页数
 
 	public PageVO() {}
 
 	public PageVO(Integer pageNum, Integer pageSize) {
-		if(pageNum != null && pageNum>0){
-			this.pageNum=pageNum;
-		}else{
-			this.pageNum=1;
+		if (pageNum != null && pageNum > 0) {
+			this.pageNum = pageNum;
+		} else {
+			this.pageNum = 1;
 		}
 
-		if (pageSize != null && pageSize>0){
-			this.pageSize=pageSize;
-		}else {
-			this.pageSize=10;
+		if (pageSize != null && pageSize > 0) {
+			this.pageSize = pageSize;
+		} else {
+			this.pageSize = 10;
 		}
 	}
 
