@@ -1,4 +1,4 @@
-package com.whackon.witmed.util;
+package com.whackon.witmed.base.util;
 
 import org.springframework.stereotype.Component;
 
