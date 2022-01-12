@@ -20,9 +20,4 @@ public class ProTitleVO extends BaseVO {
 	private String rank;                //所属等级
 	private String code;                //编码
 	private String name;                //名称
-	private String status;              //系统状态：0-禁用，1-启用
-	private String createdBy;           //创建人
-	private String createdTime;         //创建时间
-	private String modifiedBy;          //修改人
-	private Date modifiedTime;          //修改时间
 }

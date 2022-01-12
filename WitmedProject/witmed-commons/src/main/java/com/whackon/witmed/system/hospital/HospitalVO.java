@@ -32,9 +32,4 @@ public class HospitalVO extends BaseVO {
 	private String telephoneCat;      //联系电话-类别信息
 	private String telephone;         //联系电话-号码
 	private String email;              //电子邮件地址
-	private String status;            //系统状态：0-禁用，1-启用
-	private String createBy;          //创建人
-	private Date createTime;        //创建时间
-	private String modifiedBy;        //修改人
-	private Date modifiedTime;      //修改时间
 }

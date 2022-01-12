@@ -1,35 +1,48 @@
 package com.whackon.witmed.system.admin.pojo.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.entity.BaseEntity;
 import lombok.Data;
 
 import java.util.Date;
 
-/**
- * <b>系统功能 - 系统用户实体信息</b>
- *
- * @author mi
- * @date 2022/1/4
- * @since
- */
 @Data
+@TableName("sys_admin")
 public class Admin extends BaseEntity {
-	private static final long serialVersionUID = 4226492550883944160L;
-	private String id;                    //主键
-	private String no;                  //工号
-	private String name;                //姓名
-	private String cellphone;           //手机号码
-	private String password;            //登录密码
-	private String role;                //角色
-	private String identity;            //身份
-	private String department;          //所在部门
-	private String techPos;             //服务者专业技术职务
-	private String education;           //学历
-	private String techPosRank;         //服务者专业技术职务等级
-	private String status;              //系统状态:0-禁用，1-启用
-	private String createdBy;           //创建人
-	private Date createdTime;           //创建时间
-	private String modifiedBy;          //修改人
-	private Date modifiedTime;          //修改时间
-
+	private static final long serialVersionUID = 1L;
+	@TableId(type = IdType.NONE)
+	private String id;                      // 主键
+	@TableField(value = "no")
+	private String no;                        // 工号
+	@TableField(value = "name")
+	private String name;                        // 姓名
+	@TableField(value = "cellphone")
+	private String cellphone;                        // 手机号码
+	@TableField(value = "password")
+	private String password;                        // 登录密码
+	@TableField(value = "role")
+	private String role;                        // 角色
+	@TableField(value = "identity")
+	private String identity;                        // 身份
+	@TableField(value = "department")
+	private String department;                        // 所在部门
+	@TableField(value = "techPostTitle")
+	private String techPostTitle;                        // 服务者专业技术职务
+	@TableField(value = "education")
+	private String education;                        // 学历
+	@TableField(value = "techPostRank")
+	private String techPostRank;                        // 服务者专业技术职务等级
+	@TableField(value = "status")
+	private String status;                        // 系统状态：0-禁用，1-启用
+	@TableField(value = "createdBy")
+	private String createdBy;                        // 创建人
+	@TableField(value = "createdTime")
+	private Date createdTime;                        // 创建时间
+	@TableField(value = "modifiedBy")
+	private String modifiedBy;                        // 修改人
+	@TableField(value = "modifiedTime")
+	private Date modifiedTime;                        // 修改时间
 }

@@ -1,30 +1,38 @@
 package com.whackon.witmed.system.admin.pojo.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.whackon.witmed.base.pojo.entity.BaseEntity;
 import lombok.Data;
-
 import java.util.Date;
-
-/**
- * <b>系统功能 - 系统菜单功能实体信息</b>
- *
- * @author mi
- * @date 2022/1/4
- * @since
- */
 @Data
+@TableName("sys_menu")
 public class Menu extends BaseEntity {
-	private static final long serialVersionUID = 6494472229034048736L;
-	private Long id;                    //主键
-	private String code;                //角色编码
-	private String parent;              //上级菜单
-	private String text;                //菜单文本
-	private String url;                 //链接地址
-	private String icon;                //菜单图表样式
-	private Integer sort;               //排序
-	private String status;              //系统状态： 0-禁用，1-启用
-	private String createBy;            //创建人
-	private Date createdTime;           //创建时间
-	private String modifiedBy;          //修改人
-	private Date modifiedTime;          //修改时间
+	private static final long serialVersionUID = 1L;
+	@TableField(value = "id")
+	private Integer id;                        // 主键
+	@TableField(value = "code")
+	private String code;                        // 角色编码
+	@TableField(value = "parent")
+	private String parent;                        // 上级菜单
+	@TableField(value = "text")
+	private String text;                        // 菜单文本
+	@TableField(value = "url")
+	private String url;                        // 链接地址
+	@TableField(value = "icon")
+	private String icon;                        // 菜单图标样式
+	@TableField(value = "sort")
+	private Integer sort;                        // 排序
+	@TableField(value = "status")
+	private String status;                        // 系统状态：0-禁用，1-启用
+	@TableField(value = "createdBy")
+	private String createdBy;                        // 创建人
+	@TableField(value = "createdTime")
+	private Date createdTime;                        // 创建时间
+	@TableField(value = "modifiedBy")
+	private String modifiedBy;                        // 修改人
+	@TableField(value = "modifiedTime")
+	private Date modifiedTime;                        // 修改时间
 }

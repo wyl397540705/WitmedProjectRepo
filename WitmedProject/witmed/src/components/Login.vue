@@ -47,7 +47,7 @@ export default {
         if (code == 20000){
           alert(responseVO.message);
           // 需要将页面从新返回到列表页面
-          this.$router.push("/");
+          this.$router.push("/Index");
         }else {
           alert("登录失败");
         }

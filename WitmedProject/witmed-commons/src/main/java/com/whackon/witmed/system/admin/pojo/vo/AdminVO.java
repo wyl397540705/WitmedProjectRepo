@@ -15,7 +15,7 @@ import java.util.Date;
 @Data
 public class AdminVO extends BaseVO {
 	private static final long serialVersionUID = 811957010974699686L;
-	private Long id;                    //主键
+	private String id;                    //主键
 	private String no;                  //工号
 	private String name;                //姓名
 	private String cellphone;           //手机号码
@@ -26,9 +26,5 @@ public class AdminVO extends BaseVO {
 	private String techPos;             //服务者专业技术职务
 	private String education;           //学历
 	private String techPosRank;         //服务者专业技术职务等级
-	private String status;              //系统状态:0-禁用，1-启用
-	private String createdBy;           //创建人
-	private Date createdTime;           //创建时间
-	private String modifiedBy;          //修改人
-	private Date modifiedTime;          //修改时间
+
 }

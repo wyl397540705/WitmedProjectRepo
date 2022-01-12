@@ -18,9 +18,5 @@ public class RoleVO extends BaseVO {
 	private Long id;                    //主键
 	private String code;                //角色编码
 	private String name;                //角色名称
-	private String status;              //系统状态： 0-禁用，1-启用
-	private String createBy;            //创建人
-	private Date createTime;            //创建时间
-	private String modifiedBy;          //修改人
-	private Date modifiedTime;          //修改时间
+
 }
