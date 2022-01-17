@@ -11,7 +11,7 @@ import java.io.FileWriter;
 /**
  * <b></b>
  *
- * @author Arthur
+ * @author mi
  * @date 2022/1/12
  * @since
  */
@@ -28,7 +28,7 @@ public class FreemarkerUtil {
 			configuration.setDefaultEncoding("UTF-8");
 			//设定所需要生成目标文件的freemarker目标是哪个
 			Template template = configuration.getTemplate(templateName + ".ftl");
-			String targetPath = "C:\\Users\\Arthur\\Desktop\\target";
+			String targetPath = "C:\\Users\\mi\\Desktop\\target";
 			File folder = new File(targetPath);
 			if (!folder.exists()) {
 				folder.mkdirs();

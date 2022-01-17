@@ -14,6 +14,7 @@ public class Entity implements Serializable {
 	private static final long serialVersionUID = 2677759542076397849L;
 	private String tableName;                       // 表名
 	private String entityName;                      // 实体类类名
+	private String comment;
 	private List propertyList;                    // 属性集合
 
 	public String getTableName() {
@@ -30,6 +31,14 @@ public class Entity implements Serializable {
 
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
 	}
 
 	public List getPropertyList() {

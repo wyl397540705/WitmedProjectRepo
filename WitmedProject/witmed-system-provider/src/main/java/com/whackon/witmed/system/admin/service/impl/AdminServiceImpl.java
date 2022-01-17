@@ -1,8 +1,8 @@
 package com.whackon.witmed.system.admin.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.whackon.witmed.entity.system.admin.Admin;
 import com.whackon.witmed.system.admin.dao.AdminDao;
-import com.whackon.witmed.system.admin.pojo.entity.Admin;
 import com.whackon.witmed.system.admin.pojo.vo.AdminVO;
 import com.whackon.witmed.system.admin.service.AdminService;
 import com.whackon.witmed.util.PojoMapper;

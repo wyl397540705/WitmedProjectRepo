@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * <b></b>
  *
- * @author Arthur
+ * @author mi
  * @date 2022/1/12
  * @since
  */
@@ -77,6 +77,7 @@ public class GeneratorServiceImpl implements GeneratorService {
 
 			Entity entity = new Entity();
 			entity.setEntityName(entityName);
+			entity.setComment(table.getTableComment());
 			entity.setTableName(table.getTableName());
 			entity.setPropertyList(propertyList);
 			// 使用 Freemarker 生成结果

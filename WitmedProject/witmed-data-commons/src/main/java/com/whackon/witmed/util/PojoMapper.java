@@ -1,6 +1,6 @@
 package com.whackon.witmed.util;
 
-import com.whackon.witmed.system.admin.pojo.entity.Admin;
+import com.whackon.witmed.entity.system.admin.Admin;
 import com.whackon.witmed.system.admin.pojo.vo.AdminVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
